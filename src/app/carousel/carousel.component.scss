@@ -1,0 +1,38 @@
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+    height: 100vh;
+}
+
+.carousel-item {
+    transition: transform 1s ease-in-out;
+    filter: brightness(0.8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url('../../assets/images/zdj1.jpg');
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url('../../assets/images/zdj2.jpg');
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url('../../assets/images/zdj3.jpg');
+}
+
+.carousel-item:nth-child(4) {
+  background-image: url('../../assets/images/zdj4.jpg');
+}
+.carousel-caption {
+    padding-bottom: 16.5rem;
+
+  img {
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
+  }
+}

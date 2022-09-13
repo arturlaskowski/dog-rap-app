@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+@import "variables";
+
+
+@font-face {
+    font-family: "ftbl";
+    src: local("ftbl"), url(./assets/fonts/ftbl.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "internut";
+  src: local("internut"), url(./assets/fonts/internut.ttf) format("truetype");
+}
+
+
+.title {
+    font-family: "ftbl";
+    font-size: 5.5rem;
+    color: $envelope-green-light;
+
+  @media (max-width: 767.98px) {
+    font-size: 10vw;
+  }
+}
+
+.decorative-font {
+    font-family: "internut";
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: 19px 45px;
+    line-height: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 5;
+    transition: all .4s ease-in-out;
+    border: 3px solid $envelope-green-light;
+    background: transparent;
+    color: $envelope-green-light;
+    overflow: hidden;
+
+    &:hover {
+        background: rgba($envelope-green-light, .2);
+    }
+
+    a {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+}
+
+.text-action-info{
+  margin-top: 25px !important;
+  text-align: center;
+}

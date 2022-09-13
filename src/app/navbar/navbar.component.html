@@ -1,0 +1,26 @@
+<nav #navbar class="navbar navbar-expand-lg navbar-light bg-light" [ngClass]="sticky ? 'sticky-top' : 'navbar-initial'">
+    <div class="container-fluid">
+        <a class="navbar-brand mb-auto" href="#">
+            <img src="../../assets/images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="LOGO">
+        </a>
+        <div class="navbar-element pull-right">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="onNavigationItemClick('actionInfo')">#Pet16Challenge</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="onNavigationItemClick('contact')">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="onNavigationItemClick('media')">Media</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

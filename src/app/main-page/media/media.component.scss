@@ -1,0 +1,46 @@
+@import "variables";
+
+.media-element {
+    position: relative;
+    width: 69px;
+    height: 69px;
+    line-height: 75px;
+    border-radius: 50%;
+    color: $white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    font-size: 28px;
+    z-index: 1;
+    background-image: linear-gradient($envelope-green 0%, $envelope-green-light 100%);
+
+    img {
+        height: 55%;
+        margin-top: -15px;
+    }
+}
+
+
+.media-element-2 {
+  position: relative;
+  width: 69px;
+  height: 69px;
+  line-height: 75px;
+  border-radius: 50%;
+  color: $white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  font-size: 28px;
+  z-index: 1;
+  background-image: $white;
+
+  img {
+    height: 55%;
+    margin-top: -15px;
+  }
+}
+
+.media-element-container {
+    margin-bottom: 2rem;
+}
